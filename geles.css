@@ -1,0 +1,248 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 1920px;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid blue;
+}
+.container {
+  width: 1600px;
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 5px solid gold;
+  box-sizing: border-box;
+}
+.title h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 72px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1600px;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px 0px #00000026;
+  border-radius: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 16px;
+  gap: 10px;
+  max-width: 376px;
+  width: 100%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 2px solid rgb(70, 14, 107);
+}
+.card img {
+  max-width: 376px;
+  height: 431px;
+
+  object-fit: cover;
+
+  border: 2px solid red;
+}
+.pirma {
+  display: inline-block;
+  width: 376px;
+  height: 450px;
+  max-height: 100%;
+}
+.text-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 376px;
+  max-height: 198px;
+  gap: 24px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+.text-box1 h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.text-box1 p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #777777;
+}
+.choice_buy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 376px;
+  width: 100%;
+  height: 41px;
+  height: 100%;
+  padding: 20px 20px;
+  gap: 30%;
+  flex-wrap: wrap;
+  border: 2px solid rgb(42, 133, 98);
+}
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 376px;
+  max-height: 30px;
+}
+label {
+  display: block;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #7d9458;
+}
+
+.buy {
+  display: flex;
+  display: inline-block;
+  width: 100px;
+  height: 41px;
+  border-radius: 4px;
+  padding-top: 12px;
+  text-align: center;
+  background: #84ad40;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.buy a {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* PRADŽDIA PASIRINKIMO SU INPUT ORANžiNIU EKSPERMENTAS */
+.choice #orange[type="radio"] {
+  appearance: none; /* pašaliname naršyklės numatytą išvaizdą */
+  -webkit-appearance: none;
+  width: 20px; /* rato dydis */
+  height: 20px;
+  border-radius: 50%; /* kad būtų apskritimas */
+  background-color: #f3a195; /* oranžinė spalva visada matoma */
+  border: 2px solid #b35a00; /* tamsesnis apvadas */
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.2s ease;
+}
+
+/* PABAIGA ORANŽINIAM */
+
+/* PRADŽIA PASIRINKIMO SU INPUT JUODAM EKSPERMENTAS */
+.choice #black[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #383632;
+  border: 2px solid #2a2928;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.2s ease;
+}
+
+/* PRADŽIA PASIRINKIMO SU INPUT RUDAM EKSPERMENTAS */
+.choice #brown[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c38364;
+  border: 2px solid#aa6847;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.2s ease;
+}
+
+/* PRADŽIA PASIRINKIMO SU INPUT BALTAM EKSPERMENTAS */
+.choice #white[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #efeae6;
+  border: 2px solid#efeae6;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: 0.2s ease;
+}
+
+/* kai pasirinktas – apvadas paryškėja */
+.choice #black[type="radio"]:checked {
+  border: 3px solid #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+/* Tingiu rašyti daug kodo dodėl iki 300px ekranams turėtų būti informacija pakankama o toliau tobulinimui kodo ribų nėra tai karts nuo karto pateiksiu gite update:-) */
+@media (max-width: 420px) {
+  .container {
+    box-sizing: 100vw;
+  }
+  .title h2 {
+    font-size: 50px;
+  }
+
+  .buy {
+    margin-top: 30px;
+  }
+}
